@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  api:
+    # 'build: .' diz para o compose construir a imagem usando o Dockerfile na pasta atual
+    build: .
+    # 'ports' mapeia a porta 3000 de dentro do container para a porta 3000 da sua máquina
+    ports:
+      - "3000:3000"
